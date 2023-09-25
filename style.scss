@@ -111,7 +111,7 @@ img {
 }
 
 .date {
-  font-style: italic;
+  //font-style: italic;
   color: $gray;
 }
 
@@ -320,6 +320,11 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+
+.post-title h1{
+  margin-bottom: 0;
 }
 
 /*****************************************************************************/

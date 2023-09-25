@@ -113,6 +113,7 @@ img {
 .date {
   //font-style: italic;
   color: $gray;
+  font-size: 12px;
 }
 
 // Specify the color of the selection
@@ -292,7 +293,7 @@ nav {
 }
 
 .tags li a {
-  padding: 1px 7px 2px 7px;
+  padding: 1px 5px 2px 5px;
   color: #bcc5c8;
 }
 
@@ -322,8 +323,11 @@ footer {
   text-align: center;
 }
 
+.post-title {
+  margin-bottom: 15px;
+}
 
-.post-title h1{
+.post-title h1 {
   margin-bottom: 0;
 }
 

@@ -14,6 +14,6 @@ permalink: /archive/
 
 <h3>{{ post.date | date: '%Y년 %m월' }}</h3><ul>
 {% endif %}
-<li> <a href="{{ post.url }}">{{ post.title }}, {{ post.author }}</a>  <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+<li> <a href="{{ post.url }}">{{ post.title }}, {{ post.author }}</a>  <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span></li>
  
 {% endfor %}

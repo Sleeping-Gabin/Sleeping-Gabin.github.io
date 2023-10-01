@@ -140,6 +140,20 @@ img {
     clear: both;
 }
 
+
+//
+code {
+  background-color: $lighterGray;
+  border-radius: 10%;
+}
+
+blockquote {
+  margin: 0.9em 0.4em;
+  border-left: 2px solid $blue;
+  font-size: inherit;
+  font-style: normal;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -325,12 +339,19 @@ footer {
   text-align: center;
 }
 
+
+//
 .post-title {
   margin-bottom: 15px;
 }
 
 .post-title h1 {
   margin-bottom: 0;
+}
+
+.post-info {
+  margin-bottom: -12px;
+  font-size: 12px;
 }
 
 /*****************************************************************************/

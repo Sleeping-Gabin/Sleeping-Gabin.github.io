@@ -5,7 +5,7 @@
 
 .highlight { 
   //background-color: $darkerGray;
-  background-color: $lightGray;
+  background-color: $lighterGray;
   padding: 5px 10px;
   margin: 20px 0;
 }
@@ -22,7 +22,12 @@ code {
   color: #999;
   //
   background-color: $lighterGray;
-  border-radius: 10%; 
+  padding: 3px 6px;
+  border-radius: 5px; 
+}
+
+.highlight code {
+  background-color: inherit;
 }
  
 // Solarized Light Pygments 

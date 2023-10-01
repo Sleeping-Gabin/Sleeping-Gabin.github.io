@@ -140,20 +140,6 @@ img {
     clear: both;
 }
 
-
-//
-code {
-  background-color: $lighterGray;
-  border-radius: 10%;
-}
-
-blockquote {
-  margin: 0.9em 0.4em;
-  border-left: 2px solid $blue;
-  font-size: inherit;
-  font-style: normal;
-}
-
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
@@ -265,12 +251,15 @@ nav {
 
 .post { 
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    //margin: 1.8em .8em;
+    margin: 0.9em 0.4em;
+    //border-left: 2px solid $gray;
+    border-left: 2px solid $blue;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
-    font-style: italic;
+    //font-size: 22px;
+    font-size: inherit;
+    //font-style: italic;
   }
 
   .comments {

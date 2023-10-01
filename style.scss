@@ -330,6 +330,10 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+
+  @include mobile {
+    padding: 10px 0;
+  }
 }
 
 
@@ -344,15 +348,15 @@ footer {
 
 .post-info {
   margin-top: -15px;
-  font-size: 16px;
+  font-size: 12px;
+  color: $gray;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 14
+svg {
+  @include mobile {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 /*****************************************************************************/

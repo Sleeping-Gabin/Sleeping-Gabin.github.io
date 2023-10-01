@@ -9,7 +9,7 @@ name: John, Doe
 description: 깃허브 블로그 만들기 연습 중!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar:
+avatar: \images\fish.png
 
 #
 # Flags below are optional

@@ -155,8 +155,13 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  //padding: 20px 0;
+  //border-bottom: 1px solid $lightGray;
+
+  //
+  padding: 20px 0 15px 0;
+  border-bottom: 12px solid;
+  border-image: url(/images/wave.png) 100% 0% repeat;
   
   @include mobile {
     text-align: center;
@@ -347,8 +352,11 @@ footer {
 }
 
 .post-info {
-  margin-top: -15px;
-  font-size: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: -12px;
+  font-size: 14px;
   color: $gray;
 }
 
@@ -357,6 +365,21 @@ svg {
     height: 20px;
     width: 20px;
   }
+}
+
+
+td, th {
+  border: 0 0.5px solid $white;
+  padding: 5px;
+}
+
+td:nth-child(odd) {
+  background-color: $lightGray;
+}
+
+th {
+  background-color: $blue;
+  color: $white;
 }
 
 /*****************************************************************************/

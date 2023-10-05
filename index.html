@@ -10,9 +10,9 @@ layout: default
     <!-- <div class="entry">{{ post.content | strip_html | truncatewords:40}}</div> -->
     <div class="post-info">
       {% if post.category %}
-      <span class="material-symbols-outlined">folder</span> {{ post.category }}
+      <span class="material-symbols-outlined">folder</span>&nbsp;{{ post.category }}&nbsp;|&nbsp;
       {% endif %}
-      <span class="material-symbols-outlined"> calendar_month </span> {{ post.date | date: "%Y.%m.%d" }}
+      <span class="material-symbols-outlined"> calendar_month </span>&nbsp;{{ post.date | date: "%Y.%m.%d" }}
     </div>
   </article>
   {% endfor %}

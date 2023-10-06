@@ -2,13 +2,15 @@ $(function () {
     var path = window.location.pathname;
     var width = window.innerWidth;
 
-    if (path != "" && width <= 640) {
+    if (path != "/" && width <= 640) {
         $(".site-avatar").hide();
         $("#nav").hide();
+        $("#nav-button").hide();
     }
     else {
         $(".site-avatar").show();
         $("#nav").show();
+        $("#nav-button").show();
     }
 
     $("#nav-button").click(function() {

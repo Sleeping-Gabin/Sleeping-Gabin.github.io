@@ -349,7 +349,7 @@ footer {
 
 //
 .post-title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   .post-info {
     margin-top: -15px;
@@ -364,6 +364,10 @@ footer {
   margin-top: -12px;
   font-size: 14px;
   color: $gray;
+
+  a {
+    color: $gray;
+  }
 }
 
 svg {
@@ -393,8 +397,12 @@ th {
   color: $white;
 }
 
-.entry  h2 {
+.entry {
+  text-align: justify;
+
+  h2 {
     border-bottom: 1px solid $lighterGray;
+  }
 }
 
 sup {
@@ -415,17 +423,19 @@ sup {
   @include mobile {
     display: none;
   }
+
+  .post-path a {
+    color: $gray;
+  }
 }
 
-.post-path a:hover {
-  color: $blue;
-}
+
 
 #nav-button {
   display: none;
 
   @include mobile {
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;

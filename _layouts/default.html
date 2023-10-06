@@ -9,8 +9,8 @@
     />
 
     <title>
-      {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{
-      site.description }}
+      {% if page.title %} {{ page.title }} – {{ site.name }} 
+      {% else %} {{ site.name }} – {{ site.description }} {% endif %}
     </title>
 
     <meta name="author" content="{{ site.name }}" />
@@ -28,19 +28,16 @@
       href="{{ site.baseurl }}/feed.xml"
     />
 
-    <link 
-      rel="stylesheet" 
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" 
-    />
-    <link 
-      rel="stylesheet" 
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" 
-    />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
     <!-- tag, category search -->
     <script defer src="/js/alexpearce.js"></script>
+    <script type="text/javascript" src="/js/masthead.js"></script>
     <style>
       @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
       @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
@@ -86,9 +83,10 @@
               <a href="{{ site.baseurl }}/">{{ site.name }}</a>
             </h1>
             <p class="site-description">{{ site.description }}</p>
+            <span class="material-symbols-outlined" id="nav-button"> arrow_drop_up </span>
           </div>
 
-          <nav>
+          <nav id="nav">
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about/">About</a>
             <a href="{{ site.baseurl }}/archive/">Archive</a>

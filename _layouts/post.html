@@ -3,11 +3,13 @@ layout: default
 ---
 
 <article class="post">
-  <!--
-    <div class="post-info">
-    &#xE001;
+  <div class="post-path">
+    <a href="/"><span class="material-symbols-outlined">home</span></a>
+    &nbsp;&#xE001;&nbsp;
+    <a href="/search/?category={{ post.category }}">{{ post.category }}</a>
+    &nbsp;&#xE001;&nbsp;
+    {{ post.title }}
   </div>
-  -->
   
   <center class="post-title">
       <h1>{{ page.title }}</h1>

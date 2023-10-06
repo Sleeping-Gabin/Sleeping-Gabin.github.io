@@ -21,6 +21,11 @@ body {
   background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+
+  //
+  min-height: 100vh;
+  padding-bottom: 110px;
+  position: relative;
 }
 
 .container {
@@ -116,7 +121,7 @@ img {
 .date {
   //font-style: italic;
   color: $gray;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 // Specify the color of the selection
@@ -175,11 +180,9 @@ img {
   margin-right: 15px;
 
   @include mobile {
-    visibility: hidden;
-    display: none;
-    //float: none;
-    //display: block;
-    //margin: 0 auto;
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
 
   img {
@@ -213,7 +216,8 @@ img {
   font-size: 12px;
   
   @include mobile {
-    margin: 3px 0;
+    //margin: 3px 0;
+    margin: 3px 35px;
   }
 }
 
@@ -261,7 +265,7 @@ nav {
 .post { 
   blockquote {
     //margin: 1.8em .8em;
-    margin: 0.9em 0.4em;
+    margin: 0.9em 0.8em;
     //border-left: 2px solid $gray;
     border-left: 4px solid $blue;
     padding: 0.1em 1em;
@@ -284,8 +288,12 @@ nav {
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  //border-bottom: 1px solid #ddd;
+  //background-color: $lightGray;
+
+  //
+  position: absolute;
+  bottom: 0;
 }
 
 /*Tag from https://alexpearce.me*/
@@ -333,22 +341,18 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
-
-  @include mobile {
-    padding: 10px 0;
-  }
 }
 
 
 //
 .post-title {
-  margin-bottom: 15px;
-}
+  margin-bottom: 30px;
 
-.post-title .date {
-  margin-top: -15px;
+  .date {
+    margin-top: -15px;
+  }
 }
 
 .post-info {
@@ -367,19 +371,64 @@ svg {
   }
 }
 
+table {
+  @include mobile {
+    width: 100%;
+  }
+}
 
 td, th {
   border: 0 0.5px solid $white;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
-td:nth-child(odd) {
-  background-color: $lightGray;
+tr:nth-child(odd) {
+  background-color: $lighterGray;
 }
 
 th {
   background-color: $blue;
   color: $white;
+}
+
+.entry  h2 {
+    border-bottom: 1px solid $lighterGray;
+}
+
+sup {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+.footnotes {
+  color: $gray;
+  font-size: 85%;
+}
+
+.post-path {
+  font-size: 16px;
+  color: $gray;
+  margin-bottom: -10px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.post-path a:hover {
+  color: $blue;
+}
+
+#nav-button {
+  display: none;
+
+  @include mobile {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: -15px;
+  }
 }
 
 /*****************************************************************************/

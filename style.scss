@@ -384,7 +384,9 @@ table {
 }
 
 td, th {
-  border: 0 0.5px solid $white;
+  border-width: 0 0.5px;
+  border-style: solid;
+  border-color: $white;
   padding: 5px 15px;
 }
 
@@ -424,7 +426,7 @@ sup {
     display: none;
   }
 
-  .post-path a {
+  a {
     color: $gray;
   }
 }

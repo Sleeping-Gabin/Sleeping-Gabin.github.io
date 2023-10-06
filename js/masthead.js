@@ -24,7 +24,7 @@ $(function () {
         }
     });
 
-    $(window).on('resize', function() {
+    $(window).resize(function() {
         if (path != "/" && width <= 640) {
             $(".site-avatar").hide();
             $("#nav").hide();
@@ -35,7 +35,7 @@ $(function () {
             $("#nav").show();
             $("#nav-button").hide();
         }
-    })
+    });
 
 });
 

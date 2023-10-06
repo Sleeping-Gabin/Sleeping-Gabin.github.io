@@ -2,7 +2,7 @@ $(function () {
     var path = window.location.pathname;
     var width = window.innerWidth;
 
-    if (path != "" && width >= 640) {
+    if (path != "" && width <= 640) {
         $(".site-avatar").hide();
         $("#nav").hide();
     }
@@ -14,11 +14,11 @@ $(function () {
     $("#nav-button").click(function() {
         $("#nav").slideToggle();
 
-        if ($("#nav").text() == "Arrow Drop Up") {
-            $("#nav").text("Arrow Drop Down");
+        if ($("#nav-button").text() == "Arrow Drop Up") {
+            $("#nav-button").text("Arrow Drop Down");
         }
         else {
-            $("#nav").text("Arrow Drop Up");
+            $("#nav-button").text("Arrow Drop Up");
         }
     });
 

@@ -14,11 +14,11 @@ $(function () {
     $("#nav-button").click(function() {
         $("#nav").slideToggle();
 
-        if ($("#nav-button").text() == "Arrow Drop Up") {
-            $("#nav-button").text("Arrow Drop Down");
+        if ($("#nav-button").text() == "arrow_drop_up") {
+            $("#nav-button").text("arrow_drop_down");
         }
         else {
-            $("#nav-button").text("Arrow Drop Up");
+            $("#nav-button").text("arrow_drop_up");
         }
     });
 

@@ -5,12 +5,12 @@ $(function () {
     if (path != "/" && width <= 640) {
         $(".site-avatar").hide();
         $("#nav").hide();
-        $("#nav-button").hide();
+        $("#nav-button").show();
     }
     else {
         $(".site-avatar").show();
         $("#nav").show();
-        $("#nav-button").show();
+        $("#nav-button").hide();
     }
 
     $("#nav-button").click(function() {
@@ -24,4 +24,18 @@ $(function () {
         }
     });
 
+    $(window).on('resize', function() {
+        if (path != "/" && width <= 640) {
+            $(".site-avatar").hide();
+            $("#nav").hide();
+            $("#nav-button").show();
+        }
+        else {
+            $(".site-avatar").show();
+            $("#nav").show();
+            $("#nav-button").hide();
+        }
+    })
+
 });
+

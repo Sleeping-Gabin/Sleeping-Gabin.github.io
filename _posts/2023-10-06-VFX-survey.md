@@ -2,7 +2,7 @@
 layout: post
 title: 영화의 시각 효과 기술 조사
 author: 성가빈
-category: 과제
+category: HW
 tags: VFX survey
 ---
 
